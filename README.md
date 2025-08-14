@@ -30,8 +30,8 @@ O backend é o firmware que roda no ESP32.
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
-    cd <NOME_DO_REPOSITORIO>
+    git clone (https://github.com/VicRyan007/Monitor-de-animais.git
+    cd Monitor-de-animais
     ```
 
 2.  **Conecte o Hardware:**
