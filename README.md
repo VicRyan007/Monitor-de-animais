@@ -61,6 +61,21 @@ O Mosquitto é o "carteiro" que recebe as mensagens do ESP32 e as entrega para a
 
 Após esses passos, seu broker MQTT estará pronto para receber conexões tanto do ESP32 quanto da sua página web.
 
+Caso não funcione , siga os seguintes passos:
+1. Abra um terminal `(como administrador no Windows)` e navegue até o diretório de instalação do Mosquitto.
+2. Inicie o broker com o seguinte comando para carregar a configuração e exibir logs de conexão no console:
+```
+mosquitto -c mosquitto.conf -v
+```
+> <b>Observação:</b> No Windows pode ocorrer problema com o firewall relacionado a porta que o Broker irá utilizar, para habilitar essa permissão faça uma regra de firewall como a descrita abaixo.
+- Aperte os botões `Windows + R` simultaneamente e digite `wf.msc`;
+- Clique em `Regras de Entrada`, ao lado clique em `Nova Regra`;
+- Selecione a opção `Porta` e avançar;
+- Na próxima tela deixe a opção `TCP` marcada, e na parte <b>"Portas locais específicas"</b>, digite a porta do Broker por padrão é `1883` e clique em avançar;
+- Agora deixe na opção `Permitir a conexão` e avançar;
+- Nessa nova etapa pode deixar as duas primeiras opções marcadas e avançar;
+- Para finalizar dê um nome para a regra `(Ex: Mosquitto 1883)` e aperte em concluir.
+
 ---
 
 ### Passo 2: Configurar o Backend (Sistema Embarcado)
