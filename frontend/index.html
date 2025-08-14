@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Animais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard - Monitor de Animais</h1>
+        <div id="status-conexao" class="status-desconectado">Desconectado</div>
+
+        <div class="card-container">
+            <div id="card-temperatura" class="card">
+                <h2>Temperatura</h2>
+                <p id="temperatura-valor">--.- °C</p>
+            </div>
+            <div id="card-umidade" class="card">
+                <h2>Umidade</h2>
+                <p id="umidade-valor">--.- %</p>
+            </div>
+            <div id="card-sensacao" class="card">
+                <h2>Sensação Térmica</h2>
+                <p id="sensacao-valor">--.- °C</p>
+            </div>
+        </div>
+
+        <div id="status-geral" class="status-card">
+            <h2>Status de Conforto</h2>
+            <p id="status-conforto">Aguardando dados...</p>
+        </div>
+        
+        <div class="info">
+            <p>Última atualização: <span id="timestamp">Nunca</span></p>
+            <p>ID do Dispositivo: <span id="device-id">N/A</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

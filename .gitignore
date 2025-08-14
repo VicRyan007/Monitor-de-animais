@@ -1,0 +1,8 @@
+/build
+sdkconfig
+sdkconfig.ci
+/managed_components
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
