@@ -10,15 +10,6 @@ A solução foi implementada utilizando um microcontrolador ESP32 como cérebro 
 
 A comunicação é realizada através do protocolo MQTT. O ESP32 atua como um cliente "publisher", conectando-se a uma rede Wi-Fi local e enviando as informações em formato JSON para um broker Mosquitto. Para a visualização dos dados, foi desenvolvido um frontend web (HTML, CSS e JavaScript) que atua como um cliente "subscriber", conectando-se ao broker via WebSockets e exibindo os dados em um dashboard dinâmico e de fácil leitura, que se atualiza em tempo real.
 
-### Protótipo em Funcionamento
-
-| Hardware (Montagem Física) | Dashboard (Frontend Web) |
-| :---: | :---: |
-| ![Imagem do protótipo de hardware com ESP32 e sensor DHT11](https://i.imgur.com/your-hardware-image.jpg) | ![Imagem do dashboard web exibindo dados em tempo real](https://i.imgur.com/your-dashboard-image.jpg) |
-| *Figura 1: Protótipo físico do sensor.* | *Figura 2: Dashboard web recebendo dados via MQTT.* |
-
----
-
 ## Como Executar o Projeto
 
 Para replicar e executar este projeto, você precisará das seguintes ferramentas e de seguir os passos abaixo.
